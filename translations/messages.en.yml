@@ -1,0 +1,33 @@
+Produit crée: Product created
+Produit introuvable: Product missing
+Produit supprimé: Product deleted
+
+Panier crée: Product added
+Panier supprimé: Product removed
+
+paniers: Basket
+produits: Products
+
+Nom: Name
+Quantite: Qty
+Prix: Price
+PhotoUpload: Photo Upload
+
+produit:
+    nom: Name
+    quantite: Stock
+    prix: Price
+    noProd: There are no products yet
+    addProd: Add a product
+
+panier:
+    nom: Name
+    quantite: Qty
+    montant: Amount
+    delProd: Delete
+    noPan: There is nothing here yet
+    addProd: Add a basket
+    price: Price
+
+nbprod: Nb products
+totpan: Total basket

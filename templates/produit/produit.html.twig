@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{produit.nom}} {% endblock %}
+
+{% block body %}
+	<h1>{{produit.nom}}</h1>
+
+	{% if produit.photo is not empty %}
+		<img src="{{asset('uploads/'~ produit.photo)}}" style="max-width: 200px;">
+	{% endif %}
+
+	<h2>{{ 'produit.quantite'|trans }} : {{produit.quantite}}</h2>
+	<h2>{{ 'produit.prix'|trans }} : {{produit.prix}}</h2>
+		
+
+	<p>Ajouter au panier</p>
+	<a href="{{path('add_panier', {'id':produit.id})}}" class="btn">Add</a>
+
+	<a href="{{path('produit_delete', {'id':produit.id})}}" class="btn btn-danger">Delete</a>
+
+{% endblock %}
